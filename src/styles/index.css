@@ -1,0 +1,12 @@
+.main__register {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__form form{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
