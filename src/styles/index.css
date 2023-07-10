@@ -1,12 +1,49 @@
-.main__register {
-    border: 2px solid black;
+
+.main__login{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+    .login__box {
+        display: flex;
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-.register__form form{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-}
+        .register__art{
+            width: 300px;
+            height: 479px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 31px;
+        }
+
+            .art__petinfo{
+                width: 291px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+
+        .register__form{
+            width: 220px;
+        }
+        
+        .register__form form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+            .button__login{
+                width: 100%;
+            }

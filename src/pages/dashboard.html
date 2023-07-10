@@ -5,17 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <header class="header__dashboard">
         <div class="header__profile">
             <h1>Pet Info</h1>
-            <div>
-                <button>Cria Publicacao</button>
+            <div class="header__profilePhoto">
+                <button class="new__pub confirm__button">Cria Publicacao</button>
                 <img class="user__img" src="">
             </div>
         </div>
     </header>
-    <script type="module" src="../scripts/profile.js"></script>
+    <div class="feed__box">
+        <div>
+            <h1 class="feed">Feed</h1>
+        </div>
+    </div>
+    <div class="body__allPost">
+        <ul class="post__list">
+        </ul>
+    </div>
+    <dialog class="modal__userPost">
+        <form class="user__newPost">
+            <div class="modal__header">
+                <p>Criando novo post</p>
+                <button class="moda__close">X</button>
+            </div>
+            <label for="postTitle">Titulo do Post</label>
+            <input class="add__input create__post" id="postTitle" type="text" name="title" placeholder="Digite o titulo aqui ..."/>
+            <label for="postContent">Conteudo do Post</label>
+            <textarea class="create__post" name="content" id="postContent" cols="30" rows="10" placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+            <div class="modal__buttons">
+                <button class="create__post-button" type="submit">Postar</button>
+                <button class="modal__close">Fechar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="modal__userPost-edit">
+        <form class="user__postEdit">
+            <div class="modal__header">
+                <p>Edição</p>
+                <button class="moda__close">X</button>
+            </div>
+
+            <label for="editTitle">Titulo do Post</label>
+            <input class="add__input edit__post" id="edittTitle" type="text" name="title" placeholder="Digite o titulo aqui ..."/>
+
+            <label for="postContent">Conteudo do Post</label>
+            <textarea class="edit__post" name="content" id="postContent" cols="30" rows="10" placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+            <div class="modal__buttons">
+                <button class="modal__edit" type="submit">Editar</button>
+                <button class="modal__close">Fechar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="modal__userLogout">
+        <div>
+            <p class="user__name"></p>
+            <button class="button__logout">Sair</button>
+        </div>
+    </dialog>
+
+    <dialog class="modal__userPost-read">
+        <div class="user__currentPost">
+        </div>
+        <button class="modal__currentPost-Close">Fechar !</button>
+    </dialog>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../scripts/render.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
 </body>
 </html>

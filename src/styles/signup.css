@@ -1,0 +1,42 @@
+.main__register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .register__box{
+        display: flex;
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .register__art{
+        width: 300px;
+        height: 479px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 31px;
+    }
+
+        .art__petinfo{
+            width: 294px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+
+    .register__form form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }

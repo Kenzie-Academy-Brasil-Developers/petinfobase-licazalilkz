@@ -1,13 +1,145 @@
 .header__dashboard{
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center
+    margin-top: 30px;
 }
+    .header__profile{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+        .header__profilePhoto{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }  
+            .user__img{
+                width: 41px;
+                height: 41px;
+                border-radius: 20px;
+            }
 
-.header__profile{
-    width: 70vw;
+            
+.feed__box{
+    width: 100vw;
+    height: 64px;
+    margin-top: 20px;
+    background-color: var(--gray600);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
+}
+    .feed__box div{
+        width: 70%;
+    }
+
+
+
+.body__allPost{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    .post__list{
+        width: 70%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap:30px;
+    }
+
+
+.user__newPost{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}   
+    .modal__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+        .user__newPost .add__input{
+            background-color: var(--gray700);
+        }    
+        .user__newPost textarea{
+            resize: none;
+            border: none;
+            background-color: var(--gray700);
+        }
+        .modal__buttons{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 5px;
+        }
+            .create__post-button{
+                background-color: var(--brand100);
+                color: var(--gray900);
+            }
+
+.user__postEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__post{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__post .button__read{
+    width: 30%;
+}
+
+.card__post-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__post-user{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card__post-div-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.button__delete{
+    background-color: var(--gray600);
+    color: var(--gray400);
+}
+
+.user__currentPost{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.modal__userLogout{
+    width: 100px;
+    position: relative;
+    top: -63vh;
+    right: -56vw;
+}
+
+.card_post-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
