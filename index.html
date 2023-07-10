@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="main__login">
+        <div class="login__box">
+            <div class="register__art">
+                <h1>Petinfo</h1>
+                <h1>Amor e carinho por meio do conhecimento</h1>
+                <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+                <div class="art__petinfo">
+                    <img src="./src/assets/img/Rectangle 22.png" >
+                    <img src="./src/assets/img/Rectangle 33.png" >
+                    <img src="./src/assets/img/Rectangle 44.png" >
+                    <img src="./src/assets/img/Rectangle 55.png" >
+                </div>
+            </div>
+            <div class="register__form">
+                <form>
+                    <h1>Login</h1>
+                    <label for="login">Email:</label>
+                    <input  id="login" class="input__login" type="text" name="email" placeholder="digite o seu email">
+                    <label for="password">Senha:</label>
+                    <input  id="password" class="input__login" type="password" name="password" placeholder="digite a sua senha">
+    
+                    <button class="login__user confirm__button button__login" type="submit">Entrar</button>
+                    <p>Ainda não é usuario? Clique abaixo para se cadastrar !</p>
+                    <Button class="button__login"><a href="./src/pages/signup.html">Cadastro</a></Button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script type="module" src="./src/scripts/login.js"></script>
+    </main>
+</body>
+</html>
